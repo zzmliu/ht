@@ -1,6 +1,6 @@
 <template>
     <div class="gg-left">
-    <el-menu default-active="1" class="aside_menu"
+    <el-menu default-active="0" class="aside_menu"
             background-color="#267cb7" text-color="white" active-text-color="#ffd04b" :unique-opened=true>
       <el-submenu v-for="item in menu" :index="item.title" :key="item.title" >
         <template slot="title">
@@ -25,9 +25,9 @@
                 menu: [
                     { title: '学员问题', submenu:
                         [
-                            { text: '内容管理', path: '/' },
-                            { text: '类别管理', path: '/' },
-                            { text: '评论管理', path: '/' },
+                            { text: '内容管理', path: '/admin/goods/list' },
+                            { text: '类别管理', path: '/#' },
+                            { text: '评论管理', path: '/#' },
                         ]
                     },
                     { title: '前端技术', submenu:
